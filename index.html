@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta property="og:image"
+        content="https://media.tenor.com/hOjxKIQML6YAAAAM/%EC%A2%8B%EB%B9%A0%EA%B0%80-%EC%9C%A4%EC%84%9D%EC%97%B4.gif">
+    <meta property="og:title" content="해킹캠프 지원서">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="해킹캠프 지원서">
+    <meta property="og:description" content="해킹캠프 지원서">
+    <script>
+        window.addEventListener("scroll", function () {
+            const scrollTop = document.querySelector("html").scrollTop;
+            const scrollHeight = document.querySelector("html").scrollHeight;
+            const clientHeight = document.querySelector("html").clientHeight;
+
+            console.log("scrollTop: ", scrollTop);
+            console.log("clientHeight: ", clientHeight);
+            console.log("scrollHeight: ", scrollHeight);
+
+            const progress = (((scrollHeight - clientHeight) - ((scrollHeight - clientHeight) - scrollTop)) / (scrollHeight - clientHeight) * 100)
+
+            console.log(progress)
+            if (!(progress > 90)) {
+                document.querySelector(".progress-bar").style.width = progress + "%";
+                document.querySelector(".progress-bar").style['transition'] = ".05s";
+                document.querySelector(".progress-bar").style.height = 2 + "px";
+                document.querySelector(".progress-bar").style['background-color'] = "black";
+            } else {
+                document.querySelector(".progress-bar").style.width = 100 + "%";
+                document.querySelector(".progress-bar").style['transition'] = "1s";
+                document.querySelector(".progress-bar").style.height = "6px";
+                document.querySelector(".progress-bar").style['background-color'] = "rgb(33, 141, 255, .5)";
+            }
+
+        });
+
+        async function content() {
+            setTimeout(() => {
+                alert('당신은 윤다현에게 차단당했습니다 ㅠㅠ \n당신이 오리를 닮았는지 확인하세요.')
+            }, 500)
+        }
+
+    </script>
+    <style>
+        .name {
+            width: auto;
+            padding: 30px;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+            font-size: 40px;
+        }
+
+        img {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border-radius: 20px;
+            width: 50%;
+            height: auto;
+        }
+
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            background-color: rgba(0, 0, 255, 0.02);
+        }
+
+
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0px;
+            transition: .3s;
+        }
+
+        .head {
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            height: 70px;
+        }
+
+        .header {
+            width: 100%;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 20px;
+            padding: 10vw;
+            padding-top: 120px;
+            color: black
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 2px;
+            background-color: rgb(0, 0, 0, 1);
+        }
+
+
+        h1 {
+            padding: 35px;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            font-size: 25px;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 25px;
+            text-align: left;
+            padding: 5px 3vw;
+        }
+
+        h3 {
+            color: rgba(0, 0, 0, 0.5);
+            font-weight: 300;
+            font-size: 18px;
+            display: inline-block;
+            text-align: left;
+            padding: 0px 3vw;
+            word-break: break-all;
+            padding-bottom: 20px;
+        }
+
+        h4 {
+            color: rgba(0, 0, 0, 0.5);
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        .block {
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255, 0);
+            margin-top: 30px;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+
+        .bottom {
+            display: grid;
+            text-align: center;
+            width: 100%;
+        }
+
+        .content {
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, 0.05);
+            width: auto;
+            padding: 25px;
+            color: white;
+            border-radius: 20px;
+            font-size: 15px;
+            margin-top: -10px;
+        }
+
+        .content * {
+            display: inline-block;
+        }
+
+        .content a {
+            font-weight: 500;
+            padding: 20px 25px;
+            border-radius: 20px;
+            background-color: rgb(33, 141, 255);
+            text-decoration: none;
+            color: white;
+        }
+
+        .content b {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.7);
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+
+
+        @media screen and (max-width: 780px) {
+
+    
+
+
+            .name {
+                font-size: 30px;
+            }
+
+
+
+            .block {
+                background-color: rgba(255, 255, 255, 0);
+                box-shadow: none;
+            }
+
+            h1 {
+                font-size: 20px;
+                padding-left: 7vw;
+                padding-right: 7vw;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .content b {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            .content a {
+                padding: 15px 20px;
+                font-size: 13px;
+            }
+
+            .main {
+                grid-template-columns: 1fr;
+                padding: 3vw;
+                padding-top: 80px;
+            }
+        }
+    </style>
+    <title>해킹캠프 지원서</title>
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="header">
+
+            <h1>CTF? 버그바운티? 뭐가 다른건데?🤔</h1>
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="block">
+            <h2 class="name"># 팀 소개🤝🏻</h2>
+            <br>
+            <hr>
+            <br>
+            <h2>• 안녕하세요! 백부승&윤다현 입니다.</h2>
+            <h3>저희는 올해로 고3이 되는 학생들입니다. 저희 둘 모두 보안에 대한 많은 관심과,
+                발표라는 새로운 경험을 하고 싶어 지원하게 되었습니다.</h3>
+            <br><br>
+
+            <h2>• 저희는...</h2>
+            <h3>저희는 BOB12기에서 만난 동기로,, 비슷한 주제에 관심을 가지고 있었고,, 그 중 "윤다현"팀원이 해킹캠프에 참여했었는데 너무 좋은 경험이었다는 것을 듣고
+                저희의 BoB에서의 경험을 통해 얻은 것들을 이번 참가자들에게 전해 주고 싶어 발표를 결심하게 되었습니다.</h3>
+            <br><br>
+
+            <h2>• 이루어 낸 업적</h2>
+            <h3>저희는 BoB12기와 기타 보안적 활동을 진행하며, 많은 성과를 이루어 냈습니다.</h3>
+            <br>
+            <h3 style="color: black; font-size: 20px; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
+                Security</h3><br>
+            <h3 style="color: black; font-size: 20px; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
+                Security</h3><br>
+            <h3 style="color: black; font-size: 20px; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
+                Security</h3><br>
+            <h3 style="color: black; font-size: 20px; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
+                Security</h3><br>
+            <h3 style="color: black; font-size: 20px; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
+                Security</h3><br>
+            <h3 style="color: black; font-size: 20px; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
+                Security</h3><br>
+            <h3 style="color: black; font-size: 20px; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
+                Security</h3><br>
+            <h3 style="color: black; font-size: 20px; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
+                Security</h3><br>
+            <h3 style="color: black; font-size: 20px; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
+                Security</h3><br>
+
+
+
+
+
+            <br>
+
+            <br>
+
+
+
+        </div>
+
+
+        <div class="block">
+            <h2 style="font-size : 40px"># 지원 계기</h2>
+            <br>
+            <hr>
+            <br>
+            <h2>• CTF? 버그바운티 뭐가 다른데?</h2>
+            <h3>저희는 BoB12기 라는 휼륭한 기회를 통해서 다양한 해커분들을 만나고 이야기를 나누어 볼 수 있었습니다. 그 과정에서 CTF는 잘 풀지만, RealWorld의 전환에서 어려움을 겪는
+                분들을 많이 보았습니다.</h3>
+            <h2>• 그래서...</h2>
+            <h3>그래서 저희 팀은, 어떻게 RealWorld로의 접근에 어려움을 겪는 해커분들을 위해 이번 발표를 준비하게 되었습니다.</h3>
+
+            <br>
+        </div>
+
+        <div class="block">
+            <h2 style="font-size : 40px"># 발표 내용</h2>
+            <br>
+            <hr>
+            <br>
+            <h2>"서울빼고 지방은 모두 시골임 ㄹㅇㅋㅋ"</h2>
+            <h3>믿기 어렵겠지만, 그가 실제로 한 말이다. 지방에 거주하는 필자는 이 이야기를 듣고 기절해 7일동안 일어나지 못 했다...</h3>
+
+            <br>
+        </div>
+
+        <div class="block">
+            <h2 style="font-size : 40px"># 지원서를 마치며...</h2>
+            <br>
+            <hr>
+            <br>
+            <h2>1. 예상과 다르게 파란 남자를 좋아한다</h2>
+            <h3>실제로 그의 유튜브를 보다 포착되었다.</h3>
+
+            <h2>2. 그는 입이 오리닮은 여자를 좋아한다.<br><br>
+                <div class="content">
+                    <b>당신의 입이 오리를 닮았다구요??</b><br>
+                    <a href="javascript:content();">윤다현과 연락하기</a>
+                </div>
+            </h2>
+            <h3 style="color: rgba(255, 0, 0, 0.4); font-weight: 500;">경고 : 오리를 닮지 않았다면 연락에 주의하자</h3>
+
+            <br>
+            <h2>3. 그는 귀여운 남자는 싫어한다</h2>
+            <h3>당신이 귀엽다면, 접근을 하지말도록 하자.</h3>
+
+        </div>
+        <div class="block">
+            <h2 style="font-size : 30px"># 윤다현 꿀팁</h2>
+            <br>
+            <hr>
+            <br>
+            <h2>1. 알로에맛 음료수에 환장한다.</h2>
+            <h3>만약 당신이 귀엽다고 생각한다면, 알로에 음료수를 항상 소지하고 다니자. 도움이 될 것이다.</h3>
+            <h2>2. 얼굴이 존나 잘생겼다 ㅇㅇ</h2>
+            <h3>물론, 본인 피셜이다.</h3>
+            <h2>3. 자신이 크다고 생각한다;;</h2>
+            <h3>물론, 본인 피셜이다.</h3>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="bottom">
+        <h4> Copyright@ 2023, 윤다현 All Rights Reserved.</h4>
+    </div>
+    <br><br><br>
+</body>
+
+</html>

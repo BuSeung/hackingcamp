@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+<!-- 
+        해당 웹 사이트는 해킹캠프 CFP를 위해 저희가 한땀 한땀 만들었습니다.
+    -->
 
 <head>
+
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
-    <meta property="og:image"
-        content="https://media.tenor.com/hOjxKIQML6YAAAAM/%EC%A2%8B%EB%B9%A0%EA%B0%80-%EC%9C%A4%EC%84%9D%EC%97%B4.gif">
+    <meta property="og:image" content="">
     <meta property="og:title" content="해킹캠프 지원서">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,14 +43,53 @@
 
         });
 
-        async function content() {
-            setTimeout(() => {
-                alert('당신은 윤다현에게 차단당했습니다 ㅠㅠ \n당신이 오리를 닮았는지 확인하세요.')
-            }, 500)
-        }
-
     </script>
     <style>
+        .detail {
+            white-space: pre-wrap;
+            padding: 0px 3vw 0px 3vw;
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: 300;
+            font-size: 17px;
+        }
+
+        .tel-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 5px;
+            padding: 0px 3vw 0px 3vw;
+        }
+
+        .tel {
+            display: grid;
+            grid-template-columns: .3fr .7fr;
+            padding: 25px 30px 25px 30px;
+            background-color: white;
+            border-radius: 20px;
+            min-width: 100px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+            grid-column-gap: 20px;
+        }
+
+        .tel h2 {
+            font-size: 25px;
+        }
+
+
+        .tel h3 {
+            font-size: 16px;
+        }
+
+
+
+
+
+        .detail b {
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: 500;
+        }
+
         .name {
             width: auto;
             padding: 30px;
@@ -64,6 +106,11 @@
             border-radius: 20px;
             width: 50%;
             height: auto;
+        }
+
+        .tel img {
+            width: 100%;
+            max-width: 120px;
         }
 
 
@@ -123,7 +170,7 @@
 
         h2 {
             font-weight: 500;
-            font-size: 25px;
+            font-size: 23px;
             text-align: left;
             padding: 5px 3vw;
         }
@@ -150,7 +197,7 @@
             background-color: rgb(255, 255, 255, 0);
             margin-top: 30px;
             padding: 20px;
-            min-height: 100vh;
+            min-height: 30vh;
         }
 
 
@@ -195,8 +242,23 @@
             font-size: 20px;
         }
 
+        .tel h2,
+        .tel h3 {
+            padding: 0px;
+        }
+
 
         @media screen and (max-width: 780px) {
+
+
+            .tel-list {
+                grid-template-columns: 1fr;
+            }
+
+
+            .detail {
+                font-size: 15px;
+            }
 
             .reward {
                 font-size: 15px;
@@ -232,6 +294,14 @@
                 font-size: 14px;
             }
 
+            .tel h3 {
+                font-size: 14px;
+            }
+
+            .tel h2 {
+                font-size: 22px;
+            }
+
             .content {
                 padding: 25px;
             }
@@ -261,7 +331,7 @@
     <div class="head">
         <div class="header">
 
-            <h1>CTF? 버그바운티? 뭐가 다른건데?🤔</h1>
+            <h1>How To BugBounty Hacker?🤔</h1>
             <div class="progress-bar"></div>
         </div>
     </div>
@@ -277,7 +347,7 @@
                 발표라는 새로운 경험을 하고 싶어 제 28회 해킹캠프 발표에 지원하게 되었습니다.</h3>
             <br><br>
 
-            <h2>• 저희는...</h2>
+            <h2>• 저희가 누구나면...</h2>
             <h3>저희는 BOB12기에서 만난 동기로,, 비슷한 주제에 관심을 가지고 있었고,, 그 중 "윤다현"팀원이 해킹캠프에 참여했었는데 너무 좋은 경험이었다는 것을 듣고
                 저희의 BoB에서의 경험을 통해 얻은 것들을 이번 참가자들에게 전해 주고 싶어 발표를 결심하게 되었습니다.</h3>
             <br><br>
@@ -285,8 +355,22 @@
             <h2>• 이루어 낸 업적</h2>
             <h3>저희는 BoB12기와 기타 보안적 활동을 진행하며, 많은 성과를 이루어 냈습니다.</h3>
             <br>
-            <h3 class="reward" style="color: black; padding: 0px 5vw;">• 2022년 7월 17일: 충북 해킹캠프 BEST HACKER 상 - PoC
-                Security</h3><br>
+            <h3 class="reward" style="color: black; padding: 0px 5vw;">• 2023.01.02 - 세명컴퓨터고등학교 CTF - 세명컴고 교장상(우수)</h3>
+            <br>
+            <h3 class="reward" style="color: black; padding: 0px 5vw;">• 2023.08.29 - KOSPO/정보보호영재교육원 정보보안경진대회 -
+                한국남부발전주식회사 사장상</h3><br>
+            <h3 class="reward" style="color: black; padding: 0px 5vw;">• 2023.10.25 - 한국전력공사 Eleccon 2023 Finalist</h3>
+            <br>
+            <h3 class="reward" style="color: black; padding: 0px 5vw;">• 2023.10.31 - 중부대학교 JBUCTF - 중부대학교 총장상</h3><br>
+            <h3 class="reward" style="color: black; padding: 0px 5vw;">• 2023.11.08 - 대구광역시 ABB-Hackathon 정보보안경진대회
+                Finalist</h3><br>
+            <h3 class="reward" style="color: black; padding: 0px 5vw;">• 2023.11.11 - 대구광역시 ABB-Hackathon 정보보안경진대회 -
+                경북대학교 총장상</h3><br>
+            <h3 class="reward" style="color: black; padding: 0px 5vw;">• 2023.12.06 - KISA&CJ 화이트햇 투게더 2기 학생부 SOLO - 우수상
+            </h3><br>
+            <h3 class="reward" style="color: black; padding: 0px 5vw;">• 2024.01.03 - 세명컴퓨터고등학교 CTF - 세명컴고 교장상(최우수)</h3>
+            <br>
+
 
 
 
@@ -303,57 +387,114 @@
 
 
         <div class="block">
-            <h2 class="name"># 발표 내용🤝🏻</h2>
+            <h2 class="name"># 발표 내용📒</h2>
             <br>
             <hr>
             <br>
-            <h2>• CTF? 버그바운티 뭐가 다른데?</h2>
-            <h3>저희는 BoB12기 라는 휼륭한 기회를 통해서 다양한 해커분들을 만나고 이야기를 나누어 볼 수 있었습니다. 그 과정에서 CTF는 잘 풀지만, RealWorld의 전환에서 어려움을 겪는
-                분들을 많이 보았습니다.</h3>
-            <h2>• 그래서...</h2>
-            <h3>그래서 저희 팀은, 어떻게 RealWorld로의 접근에 어려움을 겪는 해커분들을 위해 이번 발표를 준비하게 되었습니다.</h3>
+            <div class="detail">
+BoB12기에 합격하고, 저희는 다양한 해커분들과 만날 기회가 생겼습니다. 그런데, 수 많은 해커분들이 버그바운티에 진입장벽을 느끼고, 많은 어려움을 느끼고 있다는 것을 알게 되었습니다.
+
+그래서 저희는 이번 발표에서 CTF 와 버그바운티의 차이점 그리고 학교 사이트 해킹하고 버그바운티한 썰 & 네이버 명예의 전당 올라간 썰을 바탕으로 참가자 분들께 저희의 경험과 팁을
+전해드리고자 합니다!
+
+발표 제목은 "<b>How To BugBounty Hacker?</b>" 입니다.
+
+그리고 저희가 생각한 발표 내용 및 발표 예상 시간은 다음과 같습니다!
+
+<b>1. Introduction (10분) </b>
+* 자기 소개 및 배경
+이름, 나이, 소속 등
+간단한 개인 및 전문적 배경 소개
+해킹을 시작한 동기
+
+<b>2. The difference between CTF and Bug bounty (10분)</b>
+* CTF와 Bug Bounty의 이해
+CTF와 Bug Bounty의 차이에 대한 설명
+* 유명한 CTF 대회 소개
+잘 알려진 CTF 이벤트 소개
+* 버그 바운티 플랫폼 소개
+인기 있는 Bug Bounty 플랫폼 소개
+
+<b>3. Hacking school sites and bug bounties (10분)</b>
+* 학교 사이트 펜 테스팅하는 동기 설명
+* 학교 사이트 취약점 종류
+Directory listing
+wordpress plugin xss
+Credential stuffing to RCE
+* 버그 바운티 제보
+취약점 제보를 위한 절차
+
+<b>4. Naver Bug Bounty (10분)</b>
+* 우연히 취약점 발견한 계기
+어떻게 첫 버그바운티 제보를 하고, 포상 받았는지 설명
+* 찾은 취약점 몇가지 소개
+Stored XSS In Naver Cafe
+Reflected XSS In Naver Cafe
+* 버그 바운티 제보
+* 포상 및 기타...
+
+
+<b>5. 목표와 포부 (5분)</b>
+* 현재까지의 발전과 앞으로의 목표 소개
+
+<b>6. 마무리 질문 및 퀴즈 (5분)</b>
+* 발표에 대한 퀴즈
+* 퀴즈 맞춘 사람 선물
+
+<b>7. 마무리 (3분)</b>
+* 발표 내용 정리와 감사 인사
+
+<b>/* 분량이 너무 많다면, 조절도 가능합니다! */</b>
+            </div>
 
             <br>
         </div>
 
 
         <div class="block">
-            <h2 style="font-size : 40px"># 지원서를 마치며...</h2>
+            <h2 class="name"># 포부😎</h2>
             <br>
             <hr>
             <br>
-            <h2>1. 예상과 다르게 파란 남자를 좋아한다</h2>
-            <h3>실제로 그의 유튜브를 보다 포착되었다.</h3>
+            <h2>• 저희가 만약 발표를 하게 된다면...</h2>
+            <h3>발표를 하게 된다면 쌈뽕하게@해보겠습니다 ㅅ1발 그리고 모든 참가자들이 집중할 만한 PPT를 만들어 발표하겠습니다.</h3>
+            <br><br>
 
-            <h2>2. 그는 입이 오리닮은 여자를 좋아한다.<br><br>
-                <div class="content">
-                    <b>당신의 입이 오리를 닮았다구요??</b><br>
-                    <a href="javascript:content();">윤다현과 연락하기</a>
+        </div>
+        <div class="block">
+            <h2 class="name"># 연락처📱</h2>
+            <br>
+            <hr>
+            <br>
+            <div class="tel-list">
+                <div class="tel">
+                    <div>
+                        <img
+                            src="https://cdn.discordapp.com/attachments/1187278362482311190/1199777962803863583/fd5b88a100a93aca.png?ex=65c3c74d&is=65b1524d&hm=eee45ad4f2b2440a23d8b0423374d269fbd975d444ce8aecba7d2a70f50e7ddf&">
+                    </div>
+                    <div style="padding: 20px 0px 20px 0px;">
+                        <h2>백부승</h2>
+                        <h3>EMAIL : kikim77777@gmail.com<br>TEL : 010-9977-0880</h3>
+                    </div>
                 </div>
-            </h2>
-            <h3 style="color: rgba(255, 0, 0, 0.4); font-weight: 500;">경고 : 오리를 닮지 않았다면 연락에 주의하자</h3>
+                <div class="tel">
+                    <div>
+                        <img
+                            src="https://cdn.discordapp.com/attachments/1187278362482311190/1199777581831032874/IMG_1030.jpg?ex=65c3c6f2&is=65b151f2&hm=e83f99626f1e1b2496e302b059375fbc1830c383163920d15724017a3d6f8a88&">
+                    </div>
+                    <div style="padding: 20px 0px 20px 0px;">
+                        <h2>윤다현</h2>
+                        <h3>EMAIL : dahyeonyun87@gmail.com<br>TEL : 010-2600-8221</h3>
+                    </div>
 
-            <br>
-            <h2>3. 그는 귀여운 남자는 싫어한다</h2>
-            <h3>당신이 귀엽다면, 접근을 하지말도록 하자.</h3>
+                </div>
+            </div>
 
-        </div>
-        <div class="block">
-            <h2 style="font-size : 30px"># 윤다현 꿀팁</h2>
-            <br>
-            <hr>
-            <br>
-            <h2>1. 알로에맛 음료수에 환장한다.</h2>
-            <h3>만약 당신이 귀엽다고 생각한다면, 알로에 음료수를 항상 소지하고 다니자. 도움이 될 것이다.</h3>
-            <h2>2. 얼굴이 존나 잘생겼다 ㅇㅇ</h2>
-            <h3>물론, 본인 피셜이다.</h3>
-            <h2>3. 자신이 크다고 생각한다;;</h2>
-            <h3>물론, 본인 피셜이다.</h3>
         </div>
     </div>
     <br><br><br>
     <div class="bottom">
-        <h4> Copyright@ 2023, 윤다현 All Rights Reserved.</h4>
+        <h4> Copyright@ 2024, 윤다현 All Rights Reserved.</h4>
     </div>
     <br><br><br>
 </body>
